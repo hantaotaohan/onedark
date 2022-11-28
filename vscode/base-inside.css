@@ -1,188 +1,198 @@
 body {
-    box-sizing: border-box;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 22px !important;
-    padding: 10px 0px;
-    max-width: 1000px;
-    margin: 0 auto;
-    /* min-width: 200px; */
-    /* white-space: nowrap; */
-  }
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 22px !important;
+  padding: 10px 0px;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* min-width: 200px; */
+  /* white-space: nowrap; */
+}
 
-  blockquote {
-      background: #2e3440 !important;
-      color: #abb2bfc9 !important;
-    padding: 1px 16px 1px 10px !important;
-    /* background-color: initial; */
-    /* font-family: 'Sarasa Mono SC' !important; */
-    /* font-weight: 600 !important; */
-    /* margin: 0 7px 0 5px !important; */
-  }
+blockquote {
+	background: #2e3440 !important;
+	color: #abb2bfc9 !important;
+  padding: 1px 16px 1px 10px !important;
+  /* background-color: initial; */
+  /* font-family: 'Sarasa Mono SC' !important; */
+  /* font-weight: 600 !important; */
+  /* margin: 0 7px 0 5px !important; */
+}
 
-  pre {
+pre {
+  font-family: 'Sarasa Mono SC' !important;
+  font-weight: 600 !important;
+	font-size: 13px;
+	line-height: 22px !important;
+	word-break: break-all;
+	word-wrap: break-word;
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 25px;
+	white-space: pre-wrap;
+	display: block;
+  /* margin: 0 7px 0 5px !important; */
+  /* padding: 0 16px 0 10px !important; */
+	margin: 15px 0 15px !important;
+	padding: 10px 20px !important;
+	background: #2e3440 !important;
+  /* color: initial; */
+}
+
+code > div {
+  background: none;
+}
+
+table td {
+  border: 1px solid rgba(171, 178, 191, 0.5) !important;
+}
+
+body.showEditorSelection .code-active-line:before {
+  border-left: 6px solid #61afef !important;
+  left: -12px !important;
+}
+
+body.showEditorSelection .code-line:hover:before {
+  border-left: 6px solid #61afef !important;
+}
+
+body.showEditorSelection .code-line .code-line:hover:before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -12px;
+    height: 100%;
+}
+
+/* .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body pre, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body pre, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body pre, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body pre {
+  margin-top: 16px;
+  margin-bottom: 16px;
+} */
+
+h1 {
+	font-size: 2.2em;
+	font-weight: 700;
+	line-height: 1.1;
+	padding-top: 16px;
+	margin-bottom: 4px;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+	line-height: 1.5em;
+	margin-top: 2.2em;
+	margin-bottom: 4px;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 40px 10px 20px 0;
+	padding-left: 9px;
+	border-left: 6px solid #ff7e79;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin: 10px 0 5px;
+  display:inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #61afef !important;
+}
+
+h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	line-height: 1.4;
+	margin: 10px 0 5px;
+	padding-top: 10px
+}
+
+h5, h6 {
+	font-size: .9em;
+}
+
+h5 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-weight: normal;
+	color: #AAA;
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+  background-color: #31363f !important;
+	/* border-top: 1px solid #31363f; */
+}
+
+strong, dfn {
+  font-family: 'Sarasa Mono SC' !important;
+	font-weight: 700;
+  color: #e06c75;
+}
+
+em, dfn {
+  font-family: 'Sarasa Mono SC' !important;
+  margin: 0px 3px 0px 3px !important;
+	font-weight: 500;
+	font-style: italic;
+  color: #e5c07b;
+}
+
+a {
+  font-family: 'Sarasa Mono SC' !important;
+  color: #61afef !important;
+}
+
+p > code, strong > code, li > code {
     font-family: 'Sarasa Mono SC' !important;
     font-weight: 600 !important;
-      font-size: 13px;
-      line-height: 22px !important;
-      word-break: break-all;
-      word-wrap: break-word;
-      border: none;
-      border-radius: 4px;
-      margin-bottom: 25px;
-      white-space: pre-wrap;
-      display: block;
-    /* margin: 0 7px 0 5px !important; */
-    /* padding: 0 16px 0 10px !important; */
-      margin: 0 0 10px !important;
-      padding: 10px 20px !important;
-      background: #2e3440 !important;
-    /* color: initial; */
-  }
-
-  code > div {
-    background: none;
-  }
-
-  table td {
-    border: 1px solid rgba(171, 178, 191, 0.5) !important;
-  }
-
-  body.showEditorSelection .code-active-line:before {
-    border-left: 6px solid #61afef !important;
-    left: -12px !important;
-  }
-
-  body.showEditorSelection .code-line:hover:before {
-    border-left: 6px solid #61afef !important;
-  }
-
-  body.showEditorSelection .code-line .code-line:hover:before {
-      content: "";
-      display: none;
-      position: absolute;
-      top: 0;
-      left: -12px;
-      height: 100%;
-  }
-
-  /* .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro Mix"].vscode-body pre, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro Flat"].vscode-body pre, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro Darker"].vscode-body pre, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body p, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body blockquote, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body ul, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body ol, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body dl, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body table, .vscode-dark[data-vscode-theme-name="One Dark Pro"].vscode-body pre {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  } */
-
-  h1 {
-      font-size: 2.2em;
-      font-weight: 700;
-      line-height: 1.1;
-      padding-top: 16px;
-      margin-bottom: 4px;
-    text-align: center;
-  }
-
-  h2, h3, h4, h5, h6 {
-      line-height: 1.5em;
-      margin-top: 2.2em;
-      margin-bottom: 4px;
-  }
-
-  h2 {
-      font-size: 1.4em;
-      margin: 40px 10px 20px 0;
-      padding-left: 9px;
-      border-left: 6px solid #ff7e79;
-      font-weight: 700;
-      line-height: 1.4;
-  }
-
-  h3 {
-      font-weight: 700;
-      font-size: 1.2em;
-      line-height: 1.4;
-      margin: 10px 0 5px;
-    display:inline-block;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #61afef !important;
-  }
-
-  h4 {
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 1.1em;
-      line-height: 1.4;
-      margin: 10px 0 5px;
-      padding-top: 10px
-  }
-
-  h5, h6 {
-      font-size: .9em;
-  }
-
-  h5 {
-      font-weight: bold;
-      text-transform: uppercase;
-  }
-
-  h6 {
-      font-weight: normal;
-      color: #AAA;
-  }
-
-  hr {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border: 0;
-    background-color: #31363f !important;
-      /* border-top: 1px solid #31363f; */
-  }
-
-  strong, dfn {
-    font-family: 'Sarasa Mono SC' !important;
-      font-weight: 700;
-    color: #e06c75;
-  }
-
-  em, dfn {
-    font-family: 'Sarasa Mono SC' !important;
-    margin: 0px 3px 0px 3px !important;
-      font-weight: 500;
-      font-style: italic;
-    color: #e5c07b;
-  }
-
-  a {
-    font-family: 'Sarasa Mono SC' !important;
-    color: #61afef !important;
-  }
-
-  p > code, strong > code, li > code {
-      font-family: 'Sarasa Mono SC' !important;
-      font-weight: 600 !important;
-      background-color: #21252b70 !important;
-      /* border: none !important; */
-      line-height: 22px !important;
-      color: #d19a66 !important;
-      font-size: 12px;
-      padding: 0px 6px 0px 6px !important;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 0px 2px 0px 2px !important;
-  }
-
-  p{
-    font-family: 'Sarasa Mono SC' !important;
+    background-color: #21252b70 !important;
+    /* border: none !important; */
     line-height: 22px !important;
-    /* flex-wrap: wrap; */
-    /* display: block !important; */
-    margin-block-start: 1em !important;
-    margin-block-end: 1em !important;
-    margin-inline-start: 0px !important;
-    margin-inline-end: 0px !important;
-  }
+    color: #d19a66 !important;
+    font-size: 12px;
+    padding: 0px 6px 0px 6px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px 0px 2px !important;
+}
 
-  li {
-    font-family: 'Sarasa Mono SC' !important;
-      margin-bottom: 0.55em;
-      margin-top: 0.55em;
-  }
+p{
+  font-family: 'Sarasa Mono SC' !important;
+  line-height: 22px !important;
+  /* flex-wrap: wrap; */
+  /* display: block !important; */
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+
+li {
+  font-family: 'Sarasa Mono SC' !important;
+	margin-bottom: 0.55em;
+	margin-top: 0.55em;
+  list-style-type: disc;
+}
+
+ul ul {
+  list-style-type: disc;
+}
+
+ul ul ul {
+  list-style-type: circle;
+  font-weight: bold
+}
